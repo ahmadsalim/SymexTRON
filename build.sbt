@@ -29,8 +29,6 @@ resolvers += "softprops-maven" at "http://dl.bintray.com/content/softprops/maven
 
 mainClass in Compile := Some("examples.evaluation.Evaluation")
 
-version := "0.3"
-
 scalaVersion := "2.11.7"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
