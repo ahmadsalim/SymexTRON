@@ -5,13 +5,13 @@ import sbt._
 
 name := "SymexTRON"
 description := "A tool for automatically generating tests for TRON programs using symbolic execution"
-version := "0.5"
+version := "0.6"
 startYear := Some(2015)
 licenses += "GPLv3" -> url("https://www.gnu.org/licenses/gpl-3.0.en.html")
 
-organization := "dk.itu"
-organizationName := "IT University of Copenhagen"
-organizationHomepage := Some(url("https://itu.dk"))
+organization := "com.github.models-team"
+organizationName := "MODELS Team @ IT University of Copenhagen"
+organizationHomepage := Some(url("https://github.com/models-team"))
 
 
 // License things

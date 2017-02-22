@@ -5,7 +5,7 @@ import syntax.ast.Statement._
 import syntax.ast._
 
 trait Refactoring extends Example {
-  override val classDefs = FullClassModel.allDefs
+  override val classDefs: Set[ClassDefinition] = FullClassModel.allDefs
 }
 
 object RenameFieldRefactoring extends Refactoring {

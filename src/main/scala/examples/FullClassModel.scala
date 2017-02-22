@@ -3,7 +3,7 @@ package examples
 import syntax.ast._
 
 object FullClassModel {
-  val classDefs = Set(
+  val classDefs: Set[ClassDefinition] = Set(
       ClassDefinition("Package", Map("classes" -> FieldDefinition(Class("Class"), ManyOpt, Ordinary)), Map())
     , ClassDefinition("Class",
                           Map("fields" -> FieldDefinition(Class("Field"), ManyOpt, Ordinary),
@@ -40,5 +40,5 @@ object FullClassModel {
     , ClassDefinition("Arg", Map("value" -> FieldDefinition(Class("Expr"), Req, Ordinary)), Map("name" -> FieldDefinition(Class("String"), Req, Ordinary)))
   )
 
-  val allDefs = Shared.stdClassDefs ++ classDefs
+  val allDefs: Set[ClassDefinition] = Shared.stdClassDefs ++ classDefs
 }
